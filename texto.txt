@@ -1,0 +1,4 @@
+Existe una relacion de composicion porque 
+la Clase UTPLValidador existe por la clase
+ Proyecto, si no existiera proyecto no existe 
+UTPLValidador 
