@@ -1,11 +1,7 @@
 public class UTPLValidator {
-    private  double calificacion;
 
-    public UTPLValidator (double calificacion){
-        this.calificacion = calificacion;
-    }
-    public boolean ValidarNota (double calificacion){
-            if (calificacion >= 7){
+    public static boolean ValidarNota(double calificacion){
+            if (calificacion >= 0 && calificacion <=10){
                 return true;
             }else{
                 return false;

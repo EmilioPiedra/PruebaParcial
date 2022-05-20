@@ -2,15 +2,25 @@ import java.net.URI;
 import java.time.LocalDateTime;
 
 public class Actividad {
-    public int contador;
+    private int contador;
     private String nombre;
     private URI url;
     private LocalDateTime fechaCierre;
 
     public Actividad( String nombre ,URI url, LocalDateTime fechaCierre) {
-        this.setNombre(nombre);
-        this.setUrl(url);
-        this.setFechaCierre(LocalDateTime.now());
+        contador++;
+        this.nombre = nombre;
+        this.url = url;
+        //this.FechaCierre = new(LocalDateTime.now());
+    }
+
+
+    public int getContador() {
+        return contador;
+    }
+
+    public void setContador(int contador) {
+        this.contador = contador;
     }
 
     public String getNombre() {
